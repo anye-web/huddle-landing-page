@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root {
+    --primary-color: #FF52BF;
+    --secondary-color: #f80ca2;
+    --dark-color: #333;
+    --light-color: #fff;
+    --lemongreen-color: #F6FBFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-color: var(--light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 1.4rem;
+    line-height: 1.3;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    margin-bottom: 0.4rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+
+/* Re-useable styles*/
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    font-weight: 600;
+}
+
+.btn-outline {
+    background: var(--light-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-inline {
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+
+.btn:hover {
+    color: var(--light-color);
+    background: var(--secondary-color);
+}
+
+.btn-lg {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    padding: 1rem 3.5rem;
+}
+
+.lg-heading {
+    font-size: 2.3rem;
+}
+
+.ml-heading {
+    font-size: 2rem;
+}
+
+.m-heading {
+    font-size: 1.5rem;
+}
+
+.lead {
+    font-size: 1.1rem;
+}
+
+.py-1 {
+    padding: 1.2rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+.px-3 {
+    padding: 0 3rem;
+}
+
+.pt {
+    padding-top: 30%;
+}
+
+.lemon-bg {
+    background: var(--lemongreen-color);
+}
+
+.dark-bg {
+    background: var(--dark-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Section: Navbar */
+
+#main-nav .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px;
+    padding: 15px 0;
+}
+
+.nav-content img {
+    width: 170px;
+}
+
+
+/* Section: Hero */
+
+.hero-content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Section: Showcase Image */
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase .showcase-img {
+    height: 85vh;
+    width: 60vw;
+}
+
+#showcase .showcase-img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Section: Counter */
+
+.counter-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.counter-content i {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+
+/* Section: Breifing */
+
+.svg {
+    display: block;
+    width: 100%;
+}
+
+.brief-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+.img-brief img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Would be display on mobile */
+
+.mobile-converse {
+    display: none;
+}
+
+
+/* Section: Footer */
+
+#main-footer {
+    color: var(--light-color);
+}
+
+.footer-bg {
+    background: #00252E;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.footer-content p {
+    margin-bottom: .7rem;
+}
+
+.footer-content img {
+    margin-right: .75rem;
+}
+
+.footer-content form {
+    margin-top: 2.5rem;
+}
+
+.footer-content input {
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--dark-color);
+}
+
+.footer-content input:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+.footer-content .btn {
+    border-radius: 4px;
+}
+
+#main-footer .social a i {
+    color: var(--light-color);
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-right: 10px;
+    transition: all .5s ease-in-out;
+}
+
+#main-footer .social a i:hover {
+    color: var(--primary-color);
+}
+
+#main-footer .attribution a {
+    color: var(--primary-color);
+}
+
+#main-footer .attribution a:hover {
+    text-decoration: underline;
+}
